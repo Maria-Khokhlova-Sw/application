@@ -1,7 +1,8 @@
 import React from "react";
-import Costs from "./components/Costs.jsx";
+import Costs from "./components/Cost/Costs.jsx";
+import NewCost from "./components/NewCost/NewCost.jsx";
 
-function App() {
+const App = () => {
 
     const cost = [
         {
@@ -22,7 +23,8 @@ function App() {
     ];
 
     return (
-        <div className="App">
+        <div >
+            <NewCost/>
             <Costs cost={cost} />
         </div>
     )
